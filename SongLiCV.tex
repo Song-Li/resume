@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\publicationSubItem}[3]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1}, &  \\
+      {\small#2}, & \\
+      {\small #3}&\\
+    \end{tabular*}\vspace{5pt}
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://songli.io/}{\Large Song Li}} & Email : \href{mailto:lisong1013@gmail.com}{lisong1013@gmail.com}\\
+  \href{http://songli.io/}{http://songli.io} & Mobile : +1-484-935-1501 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+ {Johns Hopkins University}{Maryland, USA}
+ {Ph.D. in Computer Science and Engineering}{Aug. 2018--PRESENT}
+    \resumeSubheading
+      {Lehigh University}{Pennsylvania, USA}
+      {Ph.D. in Computer Science and Engineering;  GPA: 4.0/4.0}{Aug. 2017--PRESENT}
+    \resumeSubheading
+      {Lehigh University}{Pennsylvania, USA}
+      {Master in Computer Science and Engineering;  GPA: 3.9/4.0}{Aug. 2015--May. 2017}
+    \resumeSubheading
+      {Beijing Institute of Technology}{Beijing, China}
+      {Bachelor of Software Engineering;  GPA: 3.4/4.0}{Aug. 2011--May. 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+{A Large-scale Measurement Study of Browser Fingerprint}
+{Johns Hopkins University, USA}
+{Software Engineer \& Web Privacy Research Assistant}
+{Jun. 2017--Oct. 2018}
+\resumeItemListStart
+\resumeItem{Description}
+{Made a large-scale measurement of browser fingerprint, including popular features introduced by multiple research papers. Collected more than 15,500,788 visiting records from 226 countries, 960,853 pieces of dynamics information belonging to 661,827 browser instances. We analyzed the robustness, uniqueness of each feature and also extracted the dynamics of browser fingerprints and the reason for fingerprints changing.  }    
+\resumeItem{Github Repository}
+{\url{https://github.com/Song-Li/dynamic_fingerprinting}}
+\resumeItemListEnd
+
+    \resumeSubheading
+    {Deterministic Browser}
+    {Lehigh University, USA}
+    {Software Engineer \& Web Privacy Research Assistant}
+    {Oct. 2016--May. 2017}
+    \resumeItemListStart
+    \resumeItem{Description}
+    {Built the first execution time deterministic browser, DeterFox (deterfox.com), based on Firefox open-source project to defend against timing channel attacks. The paper has been accepted by The ACM Conference on Computer and Communications Security, 2017}    
+    \resumeItem{Group}
+    {SECLAB in Lehigh University, mentored by Prof. Yinzhi Cao}
+    \resumeItem{Github Repository}
+    {\url{https://github.com/nkdxczh/gecko-dev/tree/deterfox}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Cross-browser Fingerprinting}
+    {Lehigh University, USA}
+    {Software Engineer \& Web Privacy Research Assistant}
+    {Feb. 2016--Jul. 2016}
+    \resumeItemListStart
+    \resumeItem{Description}
+    {Implemented the first cross-browser fingerprinting framework that relies on novel hardware and OS level features, such as graphics cards and installed writing scripts. The project paper has been accepted by Network \& Distributed System Security Symposium, 2017}    
+    \resumeItem{Group}
+    {SECLAB in Lehigh University, mentored by Prof. Yinzhi Cao}
+    \resumeItem{Github Repository}
+    {\url{https://github.com/Song-Li/cross_browser}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Freelancer}
+    {Taobao, China}
+    {Programmer}
+    {Aug. 2015--Feb. 2016}
+    \resumeItemListStart
+    \resumeItem{Description}
+    {Developed more than 20 projects, such as physical simulation of water flow, parallel version of PageRank, the ant colony optimization algorithm and the genetic optimization algorithm for train station management and Tabu Search algorithm for logistics activities}    
+    \resumeItem{Programming Languages}
+    {C++, Python, JavaScript, R and MATLAB}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Online Contribution Management System}
+    {IBM, China}
+    {J2EE Developer Intern in IBM}
+    {Jul. 2014--Dec. 2014}
+    \resumeItemListStart
+    \resumeItem{Description}
+    {Implemented some new features and fixed some bugs in a J2EE based management tool used by the IBM CICS Lv3 team}    
+    \resumeItem{Implementation}
+    {Java, Spring2 and Hibernate}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {ACM-ICPC Competition}
+    {BIT, China}
+    {Team member}
+    {Feb. 2012--Oct. 2013}
+    \resumeItemListStart
+    \resumeItem{Description}
+    {Trained for ACM-ICPC competition. Worked on all kinds of algorithms and programming skills}    
+    \resumeItem{Programming Languages}
+    {C and C++}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{C, C++}{: Many kinds of projects and algorithms}
+  \resumeSubItem{Python, JavaScript}{: Done some related projects such as web server, machine learning}
+  \resumeSubItem{Web \& Software Security}{: Trained for security and privacy. Done researches for web privacy}
+  \resumeSubItem{Algorithm}{: Well trained for all kinds of basic algorithms}
+\resumeSubHeadingListEnd
+
+
+%-----------Publications-----------------
+\section{Publications}
+  \publicationSubItem{1) Deterministic Browser}
+  {Yinzhi Cao, Zhanhao Chen, \textbf{Song Li}, Shujiang Wu}
+{in the Proceeding of ACM Conference on Computer and Communications Security (CCS), 2017}
+\\
+
+\publicationSubItem{2) (Cross-)Browser Fingerprinting via OS and Hardware Level Features}
+{Yinzhi Cao, \textbf{Song Li} and Erik Wijmans}
+{in the Proceeding of the Annual Network \& Distributed System Security Symposium (NDSS), 2017}
+
+%-------------------------------------------
+\section{Patent}
+\publicationSubItem{Improved Solving Method for Quasi-identifier in K-anonymization}{Fusheng Jin, XIaowei Hu, Zhen Yan, Song Li, Xiangyu Han}{CN104318167A, SIPO (The State Intellectul Property Office of The People's Republic of China), 2015}
+
+\section{Professional Activities}
+Research Mentoring
+    \resumeItemListStart
+		\resumeItem{Xueqi Ren}{Undergraduate Student, Browser fingerprinting project, 10/2017-now}    
+		\resumeItem{Ningfei Wang}{Graduate Student, Browser fingerprinting project, 10/2017-now}
+		\resumeItem{Olivia Orrell-Jones}{Undergraduate Student,, Browser fingerprinting project, 05/2017-08/2017}		
+		\resumeItem{Erik Wijmans}{Undergraduate Student, (Cross-)Browser fingerprinting project, 05/2016-08/2016}
+	\resumeItemListEnd
+External Reviewer for 
+    \resumeItemListStart
+		\resumeItem{WWW}{International World Wide Web Conference, Security and Privacy Track, 2018}    
+	\resumeItemListEnd	
+\end{document}
