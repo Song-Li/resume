@@ -83,7 +83,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://songli.io/}{\Large Song Li}} & Email : \href{mailto:lisong1013@gmail.com}{lisong1013@gmail.com}\\
+  \textbf{\href{http://songli.io/}{\Large Song Li}} & Email : \href{mailto:lisong1013@gmail.com}{songli@jhu.edu}\\
   \href{http://songli.io/}{http://songli.io} & Mobile : +1-484-935-1501 \\
 \end{tabular*}
 
@@ -91,9 +91,9 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-     \resumeSubheading
- {Johns Hopkins University}{Maryland, USA}
- {Ph.D. in Computer Science and Engineering}{Aug. 2018--PRESENT}
+   \resumeSubheading
+  {Johns Hopkins University}{Maryland, USA}
+  {Ph.D. in Computer Science and Engineering;  GPA: 3.9/4.0}{Aug. 2018–PRESENT}
     \resumeSubheading
       {Lehigh University}{Pennsylvania, USA}
       {Ph.D. in Computer Science and Engineering;  GPA: 4.0/4.0}{Aug. 2017--Aug. 2018}
@@ -106,20 +106,91 @@
   \resumeSubHeadingListEnd
 
 
+%-----------Publications-----------------
+\section{Publications}
+\publicationSubItem{1) Mining Node.js Vulnerabilities via Object Dependence Graph and Query}
+{\textbf{Song Li}, Mingqing Kang, Jianwei Hou, Yinzhi Cao}
+{Under submission (minor revision) to the 31th USENIX Security Symposium, 2022}
+%\publicationSubItem{1) Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites}
+%{Zifeng Kang, \textbf{Song Li}, Yinzhi Cao}
+%{Under submission to the  29th Network and Distributed System Security Symposium (NDSS), 2022}
+\publicationSubItem{2) Detecting Node.js Prototype Pollution Vulnerabilities via Object Lookup Analysis}
+{\textbf{Song Li}, Mingqing Kang, Jianwei Hou and Yinzhi Cao}
+{in the Proceeding of the ACM Joint European Software Engineering Conference and Symposium on-\\the Foundations of Software Engineering (ESEC/FSE), 2021}
+\publicationSubItem{3) Who Touched My Fingerprint? A Large-scale Measurement Study and Classification of Fingerprint Dynamics}
+{\textbf{Song Li}, Yinzhi Cao}
+{in the Proceeding of the Internet Measurement Conference (IMC), 2020}
+\publicationSubItem{4) Rendered Private: Making GLSL Execution Uniform to Prevent WebGL-based Browser Fingerprinting}
+{Shujiang Wu, \textbf{Song Li} and Yinzhi Cao, Ningfei Wang}
+{in the Proceeding of the 28th USENIX Security Symposium, 2019}
+\publicationSubItem{5) Deterministic Browser}
+{Yinzhi Cao, Zhanhao Chen, \textbf{Song Li}, Shujiang Wu}
+{in the Proceeding of ACM Conference on Computer and Communications Security (CCS), 2017}
+\\
+\publicationSubItem{6) (Cross-)Browser Fingerprinting via OS and Hardware Level Features}
+{Yinzhi Cao, \textbf{Song Li*} and Erik Wijmans}
+{in the Proceeding of the Annual Network \& Distributed System Security Symposium (NDSS), 2017}\\
+
+
+
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
-{A Large-scale Measurement Study of Browser Fingerprint}
-{Johns Hopkins University, USA}
-{Software Engineer \& Web Privacy Research Assistant}
-{Jun. 2017--Oct. 2018}
+  
+     \resumeSubheading
+{Power Virtual Agents Model Analyzing System}
+{Microsoft, USA}
+{Data Scientist Intern in Microsoft}
+{May. 2020–Aug. 2020}
 \resumeItemListStart
 \resumeItem{Description}
-{Made a large-scale measurement of browser fingerprint, including popular features introduced by multiple research papers. Collected more than 15,500,788 visiting records from 226 countries, 960,853 pieces of dynamics information belonging to 661,827 browser instances. We analyzed the robustness, uniqueness of each feature and also extracted the dynamics of browser fingerprints and the reason for fingerprints changing.  }    
-\resumeItem{Github Repository}
-{\url{https://github.com/Song-Li/dynamic_fingerprinting}}
+{ Designed and implemented a system to analyze the Power Virtual Agents model developed by Microsoft. This system can interpret the NLP model, analyze the details of each layer including the attention heat map, the embedding of sentences, the 2D visualization of sentences, etc. This project is used by the PVA team and considered to be applied to the PVA production.}    
 \resumeItemListEnd
+  
+       \resumeSubheading
+  {Code Property Graph Based Vulnerability Detection}
+  {Johns Hopkins University, USA}
+  {Software Engineer \& Web Privacy Research Assistant}
+  {Feb. 2019–May. 2020}
+  \resumeItemListStart
+  \resumeItem{Description}
+  { Designed and implemented a new type of Code Property Graph, which is cross-function, cross-file, and object-based, to detect varies vulnerabilities in JavaScript (Node.JS) programs including code injection, XSS, authentication error and other CVEs. This graph can also be easily applied to other languages.}    
+  \resumeItemListEnd
+     \resumeSubheading
+  {AI Builder Dataset Modification Recommendation System}
+  {Microsoft, USA}
+  {Data Scientist Intern in Microsoft}
+  {May. 2019–Aug. 2019}
+  \resumeItemListStart
+  \resumeItem{Description}
+  { Designed and implemented a system to recommend modifications on the dataset at the user level to make the prediction of the machine learning model more accurate. More specifically, the users of the machine learning platform may not know how to make a predictive dataset. By my work, the system can suggest what modifications on the dataset may help to get a better result. This work is based on designing an algorithm to define the distance between dataset, and do the recommendation based on the similar dataset in the dataset pool built on top of the history.}    
+  \resumeItemListEnd
+     \resumeSubheading
+  {Rendered Private}
+  {Johns Hopkins University, USA}
+  {Software Engineer \& Web Privacy Research Assistant}
+  {Dec. 2017–Jan. 2019}
+  \resumeItemListStart
+  \resumeItem{Description}
+  { Proposed and implemented UNIGL, a novel system that rewrites GLSL programs and redefines all the floating-point operations in the aforementioned three stages of WebGL rendering, which can make the rendering results of programs deterministic across browsers and devices. This work is used to defend against WebGL based (cross-)browser fingerprinting. The paper has been accepted by USENIX Security '19.}    
+  \resumeItem{Github Repository}
+  {\url{https://github.com/Song-Li/addon}}
+  \resumeItemListEnd
+  
+   \resumeSubheading
+  {A Large-scale Measurement Study of Browser Fingerprint}
+  {Johns Hopkins University, USA}
+  {Software Engineer \& Web Privacy Research Assistant}
+  {Jun. 2017–Oct. 2018}
+  \resumeItemListStart
+  \resumeItem{Description}
+  { Made a large-scale measurement of browser fingerprint, including popular features introduced by
+  	multiple research papers. Collected more than 15,500,788 visiting records from 226 countries, 960,853 pieces of
+  	dynamics information belonging to 661,827 browser instances. We analyzed the robustness, uniqueness of each
+  	feature and also extracted the dynamics of browser fingerprints and the reason for fingerprints changing.}    
+  \resumeItem{Github Repository}
+  {\url{https://github.com/Song-Li/dynamic fingerprinting}}
+  \resumeItemListEnd
 
     \resumeSubheading
     {Deterministic Browser}
@@ -191,38 +262,45 @@
 
 %
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-\resumeSubHeadingListStart
-  \resumeSubItem{C, C++}{: Many kinds of projects and algorithms}
-  \resumeSubItem{Python, JavaScript}{: Done some related projects such as web server, machine learning}
-  \resumeSubItem{Web \& Software Security}{: Trained for security and privacy. Done researches for web privacy}
-  \resumeSubItem{Algorithm}{: Well trained for all kinds of basic algorithms}
-\resumeSubHeadingListEnd
+%\section{Skills}
+%\resumeItemListStart  
+%\resumeItem{Web \& Software Security}{}
+%\resumeItem{Algorithm}{}
+%	\resumeItem{Python, JavaScript}{}
+  %\resumeItem{C, C++}{}
+    %\resumeItemListEnd
 
-
-%-----------Publications-----------------
-\section{Publications}
-  \publicationSubItem{1) Deterministic Browser}
-  {Yinzhi Cao, Zhanhao Chen, \textbf{Song Li}, Shujiang Wu}
-{in the Proceeding of ACM Conference on Computer and Communications Security (CCS), 2017}
-\\
-
-\publicationSubItem{2) (Cross-)Browser Fingerprinting via OS and Hardware Level Features}
-{Yinzhi Cao, \textbf{Song Li} and Erik Wijmans}
-{in the Proceeding of the Annual Network \& Distributed System Security Symposium (NDSS), 2017}
 
 %-------------------------------------------
 \section{Patent}
 \publicationSubItem{Improved Solving Method for Quasi-identifier in K-anonymization}{Fusheng Jin, XIaowei Hu, Zhen Yan, Song Li, Xiangyu Han}{CN104318167A, SIPO (The State Intellectul Property Office of The People's Republic of China), 2015}
 
 \section{Professional Activities}
-Research Mentoring
+Research Mentoring\\
+	\quad Master Students:
     \resumeItemListStart
-		\resumeItem{Xueqi Ren}{Undergraduate Student, Browser fingerprinting project, 10/2017-now}    
-		\resumeItem{Ningfei Wang}{Graduate Student, Browser fingerprinting project, 10/2017-now}
-		\resumeItem{Olivia Orrell-Jones}{Undergraduate Student,, Browser fingerprinting project, 05/2017-08/2017}		
-		\resumeItem{Erik Wijmans}{Undergraduate Student, (Cross-)Browser fingerprinting project, 05/2016-08/2016}
+    \resumeItem{Yichao Xu}{ Johns Hopkins University, 07/2021-09/2021}
+     \resumeItem{Siqi Cao}{Johns Hopkins University, 12/2020-03/2021}
+    \resumeItem{Huangyin Chen}{Johns Hopkins University, 12/2020-03/2021}
+    \resumeItem{Qingshan Zhang}{Johns Hopkins University, 12/2020-03/2021}
+    \resumeItem{Mingqing Kang}{Johns Hopkins University, now a PhD student in JHU, 12/2020-03/2021}
+    \resumeItem{Guanlong Wu}{Johns Hopkins University, now a PhD student in University of Virginia, 04/2018-03/2019}
+    \resumeItem{Ningfei Wang}{Lehigh University, now a PhD student in the University of California, Irvine, 10/2017-05/2018}
+    \resumeItemListEnd
+\quad BS Students:
+\resumeItemListStart	
+	\resumeItem{Rohan Jasani}{Indian Institutes of Technology, 06/2020-09/2020}
+	\resumeItem{Tianchen Zhang}{Beihang University, 06/2018-09/2020}
+    \resumeItem{Gongqi Huang}{Johns Hopkins University, 08/2018-02/2020}
+    \resumeItem{Xueqi Ren}{Lehigh University, then a Master student in Columbia University, 10/2017-05/2018}    
+    \resumeItem{Olivia Orrell-Jones}{Brown University, 05/2017-08/2017}	
+    \resumeItem{Erik Wijmans}{Lehigh University, now a PhD student in Georgia Institute of Technology, 05/2016-08/2016}	
 	\resumeItemListEnd
+\quad High School Students:
+\resumeItemListStart	
+    \resumeItem{Kylie Gong}{07/2021-09/2021}
+	\resumeItem{Kevin Y.}{07/2021-09/2021}	
+\resumeItemListEnd
 External Reviewer for 
     \resumeItemListStart
 		\resumeItem{WWW}{International World Wide Web Conference, Security and Privacy Track, 2018}    
